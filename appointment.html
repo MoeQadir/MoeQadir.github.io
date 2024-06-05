@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags for SEO and Mobile Compatibility -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page Title -->
+    <title>Appointment - Premier Care Hospital</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <!-- Logo and Site Title -->
+            <div class="logo">
+                <img src="logo.png" alt="Clinic Logo">
+                <span>Premier Care Hospital</span>
+            </div>
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li class="active"><a href="appointment.html">Appointment</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- Login and Sign Up Buttons -->
+            <div class="auth-buttons">
+                <a href="#">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <span>Login</span>
+                </a>
+                <a href="#">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <span>Sign Up</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Appointment Section -->
+        <section class="appointment_section layout_padding">
+            <div class="container">
+                <h1 class="mt-5 mb-4 text-center">Schedule an Appointment</h1>
+                <form>
+                    <!-- Name Field -->
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <!-- Email Field -->
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <!-- Phone Number Field -->
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <!-- Doctor Selection Field -->
+                    <div class="form-group">
+                        <label for="doctor">Select Doctor</label>
+                        <select class="form-control" id="doctor" required>
+                            <option value="">Select a doctor</option>
+                            <option value="Dr. John Daniels">Dr. John Daniels</option>
+                            <option value="Dr. Jane Hellen">Dr. Jane Hellen</option>
+                            <option value="Dr. Vinay Kumar">Dr. Vinay Kumar</option>
+                            <option value="Dr. Pretti Sharma">Dr. Pretti Sharma</option>
+                            <!-- Add more options for other doctors if needed -->
+                        </select>
+                    </div>
+                    <!-- Preferred Date Field -->
+                    <div class="form-group">
+                        <label for="date">Preferred Date</label>
+                        <input type="date" class="form-control" id="date" required>
+                    </div>
+                    <!-- Preferred Time Field -->
+                    <div class="form-group">
+                        <label for="time">Preferred Time</label>
+                        <input type="time" class="form-control" id="time" required>
+                    </div>
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary">Submit Appointment</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Premier Care Hospital. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

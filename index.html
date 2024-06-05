@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier Care Hospital</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Slick CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <!-- Include jQuery and Slick JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar Section -->
+    <header>
+        <nav>
+            <!-- Logo and Site Title -->
+            <div class="logo">
+                <img src="logo.png" alt="Premier Care Hospital Logo">
+                <span>Premier Care Hospital</span>
+            </div>
+            <!-- Navigation Links -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="appointment.html">Appointment</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- Authentication Buttons -->
+            <div class="auth-buttons">
+                <a href="#">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <span>Login</span>
+                </a>
+                <a href="#">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <span>Sign Up</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Hero Section with Slider -->
+        <section class="hero">
+            <div class="sliding-background slider">
+
+                <!-- Slide 1 -->
+                <div>
+                    <img src="images/slide1.jpg" alt="Slide 1">
+                    <div class="hero-text">
+                        <h1>Welcome to Premier Care Hospital</h1>
+                        <p>Your health is our priority</p>
+                        <a href="appointment.html" class="btn">Book an Appointment</a>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div>
+                    <img src="images/slide2.jpg" alt="Slide 2">
+                    <div class="hero-text">
+                        <h1>Comprehensive Medical Care</h1>
+                        <p>Expert doctors, advanced facilities</p>
+                        <a href="services.html" class="btn">Our Services</a>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div>
+                    <img src="images/slide3.jpg" alt="Slide 3">
+                    <div class="hero-text">
+                        <h1>Compassionate Care</h1>
+                        <p>We care about your health</p>
+                        <a href="contact.html" class="btn">Contact Us</a>
+                    </div>
+                </div>
+                 <div>
+                    <img src="images/slide4.jpg" alt="Slide 4">
+                    <div class="hero-text">
+                        <h1>Discover Our Premium Healthcare Services</h1>
+        <p>Experience personalized care and comprehensive medical services tailored to your needs. Our team is dedicated to providing you with the highest quality healthcare to ensure your well-being.</p>
+                        <a href="contact.html" class="btn">About Us</a>
+                    </div>
+                </div>
+                <!-- slide 5 -->
+                 <div>
+                    <img src="images/slide5.jpg" alt="Slide 5">
+                    <div class="hero-text">
+                        <h1>Profient staff</h1>
+                        <p>We have qualified staff </p>
+                        <a href="doctors.html" class="btn">Doctors</a>
+                    </div>
+                </div>
+            </div>
+          <button onclick="playAudio()">Play Audio</button>
+<audio id="myAudio" loop>
+    <source src="audio.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+function playAudio() {
+    var audio = document.getElementById("myAudio");
+    audio.play();
+}
+</script>
+
+
+        </section>
+
+        <!-- Treatment Services Section -->
+        <section class="treatment_section layout_padding">
+            <div class="container">
+                <!-- Section Heading -->
+                <div class="heading_container heading_center">
+                    <h2>Hospital <span>Treatment</span></h2>
+                </div>
+                <!-- Treatment Services Grid -->
+                <div class="row">
+                    <!-- Nephrologist Care Service -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-box">
+                            <div class="img-box">
+                                <img src="images/t1.png" alt="Nephrologist Care">
+                            </div>
+                            <div class="detail-box">
+                                <h4>Nephrologist Care</h4>
+                                <p>Specialized care for kidney-related issues provided by experienced nephrologists.</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Eye Care Service -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-box">
+                            <div class="img-box">
+                                <img src="images/t2.png" alt="Eye Care">
+                            </div>
+                            <div class="detail-box">
+                                <h4>Eye Care</h4>
+                                <p>Comprehensive eye care services including routine exams, surgeries, and treatment.</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pediatrician Clinic Service -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-box">
+                            <div class="img-box">
+                                <img src="images/t3.png" alt="Pediatrician Clinic">
+                            </div>
+                            <div class="detail-box">
+                                <h4>Pediatrician Clinic</h4>
+                                <p>Compassionate care for infants, children, and adolescents by experienced pediatricians.</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Parental Care Service -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-box">
+                            <div class="img-box">
+                                <img src="images/t4.png" alt="Parental Care">
+                            </div>
+                            <div class="detail-box">
+                                <h4>Parental Care</h4>
+                                <p>Comprehensive parental care including prenatal, childbirth, and postnatal services.</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Premier Care Hospital. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Initialize Slick Slider -->
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                autoplay: true,
+                autoplaySpeed: 1500, // Time between slides (3 seconds)
+                dots: true,
+                arrows: false,
+                fade: true,
+                cssEase: 'linear',
+                speed: 2000 // Transition speed (1 second)
+            });
+        });
+    </script>
+</body>
+</html>
